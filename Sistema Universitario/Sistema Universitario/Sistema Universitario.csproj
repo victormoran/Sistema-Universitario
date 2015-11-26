@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B6B5B82-38FE-4376-B78C-93584CE71936}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_Universitario</RootNamespace>
+    <AssemblyName>Sistema Universitario</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pagAdministrador\AlumnoPagAdministrador.aspx" />
+    <Content Include="pagAdministrador\PerfilAdministrador.aspx" />
+    <Content Include="pagAlumno\alumnoMP.Master" />
+    <Content Include="pagAlumno\PerfilAlumno.aspx" />
+    <Content Include="pagCoordinador\PerfilCoordinador.aspx" />
+    <Content Include="pagDocente\docentePM.Master" />
+    <Content Include="pagCoordinador\coordinadorMP.Master" />
+    <Content Include="pagAdministrador\administradorMP.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Tema1\estilos.css" />
+    <Content Include="Index.aspx" />
+    <Content Include="pagAdministrador\Index.aspx" />
+    <Content Include="pagAlumno\Index.aspx" />
+    <Content Include="pagCoordinador\Index.aspx" />
+    <Content Include="pagDocente\Index.aspx" />
+    <Content Include="resources\img\administracion.jpg" />
+    <Content Include="resources\img\alumnos.jpg" />
+    <Content Include="resources\img\alumnos2.jpg" />
+    <Content Include="resources\img\cubillas.jpg" />
+    <Content Include="resources\img\docente.jpg" />
+    <Content Include="resources\img\docente2.jpg" />
+    <Content Include="resources\img\docente3.jpg" />
+    <Content Include="resources\img\marcha.jpg" />
+    <Content Include="resources\img\missuap.jpg" />
+    <Content Include="resources\img\enfermeria.jpg" />
+    <Content Include="resources\img\estomotologia.jpg" />
+    <Content Include="resources\img\graduation.jpg" />
+    <Content Include="resources\img\graduation.png" />
+    <Content Include="resources\img\portada-full.jpg" />
+    <Content Include="resources\img\portada.jpg" />
+    <Content Include="resources\img\portada2.jpg" />
+    <Content Include="resources\img\sistemas.jpg" />
+    <Content Include="resources\img\uap1.jpg" />
+    <Content Include="resources\js\jquery.js" />
+    <Content Include="resources\js\script.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagAdministrador\administradorMP.Master.cs">
+      <DependentUpon>administradorMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAdministrador\administradorMP.Master.designer.cs">
+      <DependentUpon>administradorMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pagAdministrador\AlumnoPagAdministrador.aspx.cs">
+      <DependentUpon>AlumnoPagAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAdministrador\AlumnoPagAdministrador.aspx.designer.cs">
+      <DependentUpon>AlumnoPagAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagAdministrador\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAdministrador\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagAdministrador\PerfilAdministrador.aspx.cs">
+      <DependentUpon>PerfilAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAdministrador\PerfilAdministrador.aspx.designer.cs">
+      <DependentUpon>PerfilAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagAlumno\alumnoMP.Master.cs">
+      <DependentUpon>alumnoMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAlumno\alumnoMP.Master.designer.cs">
+      <DependentUpon>alumnoMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pagAlumno\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAlumno\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagAlumno\PerfilAlumno.aspx.cs">
+      <DependentUpon>PerfilAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagAlumno\PerfilAlumno.aspx.designer.cs">
+      <DependentUpon>PerfilAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagCoordinador\coordinadorMP.Master.cs">
+      <DependentUpon>coordinadorMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagCoordinador\coordinadorMP.Master.designer.cs">
+      <DependentUpon>coordinadorMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pagCoordinador\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagCoordinador\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagCoordinador\PerfilCoordinador.aspx.cs">
+      <DependentUpon>PerfilCoordinador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagCoordinador\PerfilCoordinador.aspx.designer.cs">
+      <DependentUpon>PerfilCoordinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagDocente\docentePM.Master.cs">
+      <DependentUpon>docentePM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagDocente\docentePM.Master.designer.cs">
+      <DependentUpon>docentePM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pagDocente\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagDocente\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Encapsulamiento\Encapsulamiento.csproj">
+      <Project>{a8d6ecbc-2436-4871-b7b7-69cefe05b38c}</Project>
+      <Name>Encapsulamiento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{068c475b-f47d-4415-a4c3-301727165654}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2212</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2212/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

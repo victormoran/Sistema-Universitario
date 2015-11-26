@@ -1,0 +1,11 @@
+@keyframes portada {
+  0% {
+    background: url("/img/portada2.jpg");
+  }
+  50% {
+    background: url("/img/portada2.jpg");
+  }
+  100% {
+    background: url("/img/portada2.jpg");
+  }
+}

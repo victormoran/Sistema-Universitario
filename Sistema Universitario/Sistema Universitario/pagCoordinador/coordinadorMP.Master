@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="coordinadorMP.master.cs" Inherits="Sistema_Universitario.pagCoordinador.coordinadorMP" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Intranet Coordinador</title>
+    <asp:ContentPlaceHolder id="titulo" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+    <link href="https://fontastic.s3.amazonaws.com/2C6xRfzeTZFRMiMqNyk3VF/icons.css" rel="stylesheet">
+    <script src="../resources/js/jquery.js" type="application/javascript"></script>
+    <script src="../resources/js/script.js" type="application/javascript"></script>
+</head>
+<body>
+    <div id="headernet">
+      <div class="header">
+        <div class="header__espacioreservado"></div>
+        <div class="header__logo icon-network"></div>
+        <h2 class="header__texto">Intranet UAP</h2>
+      </div>
+      <div class="menu">
+        <div class="menu__toggle icon-menu"></div>
+        <div class="menu__headernet">
+          <div class="menu__icono-cerrar icon-cerrar"></div>
+          <div class="informacion">
+            <%--<h2 class="informacion__nombre">Jorge Fernando Palacios Sánchez</h2>--%>
+         
+            <h3 class="informacion__cargo">Coordinador</h3>
+            <p class="informacion__texto">El Manchester United Football Club es un club de fútbol de la ciudad de Mánchester, Inglaterra, Reino Unido, que disputa sus partidos como local en el estadio Old Trafford.</p>
+          </div>
+          <div class="acciones">
+            <ul class="acciones__lista">
+              <li class="acciones__item acciones__item--activo"><a href="#" class="acciones__link">Inicio</a></li>
+              <li class="acciones__item"><a href="PerfilCoordinador.aspx"  class="acciones__link">Perfil</a></li>
+              <li class="acciones__item"><a href="#" class="acciones__link">Notas</a></li>
+              <li class="acciones__item"><a href="#" class="acciones__link">Asistencias</a></li>
+              <li class="acciones__item"><a href="#" class="acciones__link">Record Academico</a></li>
+              <li class="acciones__item"><a href="#" class="acciones__link">Salir</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor__intranet">
+        <asp:ContentPlaceHolder ID="ContemCoordinador" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

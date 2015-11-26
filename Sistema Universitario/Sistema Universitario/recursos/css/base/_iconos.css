@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "universidadvictor";
+  src: url("../fonts/universidadvictor.eot");
+  src: url("../fonts/universidadvictor.eot?#iefix") format("embedded-opentype"), url("../fonts/universidadvictor.woff") format("woff"), url("../fonts/universidadvictor.ttf") format("truetype"), url("../fonts/universidadvictor.svg#universidadvictor") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "universidadvictor" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "universidadvictor" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "a";
+}
+
+.icon-nota:before {
+  content: "b";
+}
+
+.icon-foto:before {
+  content: "c";
+}
+
+.icon-libro:before {
+  content: "d";
+}
+
+.icon-usuario:before {
+  content: "e";
+}
+
+.icon-cerrar:before {
+  content: "f";
+}
+
+.icon-network:before {
+  content: "g";
+}

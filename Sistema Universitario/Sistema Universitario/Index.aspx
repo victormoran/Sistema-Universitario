@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Sistema Universitario</title>
  <script src="resources/js/jquery.js" type="application/javascript"></script>
-<script type="text/javascript" src="resources/jquery.validate.js"></script>
+<script type="text/javascript" src="resources/js/jquery.validate.js"></script>
  <script src="resources/js/script.js" type="application/javascript"></script>
 </head>
 <body>
@@ -32,7 +32,7 @@
         <form id="formulario" class="formulario" runat="server">
           <div class="formulario__invisible"></div>
           <div class="formulario__contenedor">
-            <label for="inputUsuario" class="formulario__etiqueta">Usuario</label>
+            <label for="inputUsuario"  class="formulario__etiqueta">Usuario</label>
             <asp:TextBox id="inputUsuario" placeholder="Usuario" name="inputUsuario" class="formulario__caja" runat="server"></asp:TextBox>
             <label for="inputPass" class="formulario__etiqueta">Contraseña</label>
             <asp:TextBox id="inputPass" runat="server" placeholder="Contraseña" name="inputPass" class="formulario__caja"></asp:TextBox>

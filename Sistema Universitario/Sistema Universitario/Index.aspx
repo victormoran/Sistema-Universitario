@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Sistema Universitario</title>
  <script src="resources/js/jquery.js" type="application/javascript"></script>
+<script type="text/javascript" src="resources/jquery.validate.js"></script>
  <script src="resources/js/script.js" type="application/javascript"></script>
 </head>
 <body>

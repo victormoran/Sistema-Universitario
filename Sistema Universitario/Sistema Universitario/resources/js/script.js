@@ -27,4 +27,28 @@ $(document).on('ready',function(){
         $('body').removeClass('open__body');
     });
 
+        $('#formulario').submit(function(e) {
+            e.preventDefault();
+        }).validate({
+            debug: false,
+            messages: {
+                "inputUsuario": {
+                    required: "Introduce tu Usuario."
+                    number: "Introduce un código postal válido.",
+                    maxlength: "Debe contener 10 digitos.",
+                    minlength: "Debe contener 10 dígitos."
+                },
+                
+                "inputPass": {
+                    required: "Introduce tu contraseña.",
+                    number: "Introduce un código postal válido.",
+                    maxlength: "Debe contener 10 dígitos.",
+                    minlength: "Debe contener 10 dígitos."
+                }
+            }
+ 
+        });
+
+
+
 });
